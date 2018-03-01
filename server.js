@@ -8,7 +8,7 @@ app.listen(process.env.PORT || 3000);
 // PathLocationStrategy
 
 app.get('/*', function(req, res) {
-  res.sendFile(path.join(__dirname + '/dist/index.html'));
+  res.sendFile(path.join(__dirname + '/src/index.html'));
 })
 
 console.log('Console listening!');
