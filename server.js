@@ -5,6 +5,7 @@ const path = require('path');
 app.use(express.static(__dirname + '/dist'));
 //app.use(express.static('public'));
 //app.use(express.static(__dirname + '/src'));
+app.set(process.env.PORT || 3000);
 app.listen(process.env.PORT || 3000);
 
 // PathLocationStrategy
